@@ -1,0 +1,602 @@
+
+.ih_vista .dojoxGrid {
+	position: relative;
+	background-color: #e9e9e9;
+	/*font-size: 0.85em;*/
+	-moz-outline-style: none;
+	outline: none;
+	overflow: hidden;
+	height: 0;
+	border: none;
+}
+
+.ih_vista .thumb_block, .ih_vista .thumb_block tr, .ih_vista .thumb_block tr td {
+	width: 100%;
+	border: 0px;
+	padding: 0px;
+	margin: 0;
+	outline: none;
+}
+
+/* ------------------- */
+/*     Table block     */
+/* ------------------- */
+
+.ih_vista .table .alignCenter {
+	text-align: center;
+}
+
+.ih_vista .table .alignRight {
+	text-align: right;
+}
+
+.ih_vista .table .dojoxGrid table {
+	padding: 0;
+}
+.ih_vista .table .dojoxGrid td {
+	-moz-outline: none;
+}
+.ih_vista .table .dojoxGrid-master-header {
+	position: relative;
+}
+.ih_vista .table .dojoxGrid-master-view  {
+	position: relative;
+}
+.ih_vista .table .dojoxGrid-view {
+	position: absolute;
+	overflow: hidden;
+}
+.ih_vista .table .dojoxGrid-header {
+	position: absolute;
+	overflow: hidden;
+}
+.ih_vista .table .dojoxGrid-header {
+	height: 23px;
+	background: url(images/gridTitleBar.png) #eeeeee repeat-x top;
+}
+.ih_vista .table .dojoxGrid-header table {
+	text-align: center;
+}
+.ih_vista .table .dojoxGrid-header .dojoxGrid-cell-content {
+	text-align: center;
+}
+.ih_vista .table .dojoxGrid-header .dojoxGrid-cell {
+	height: 23px;
+	border: none;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #d5d5d5;
+	font-weight: normal !important;
+	color: #000 !important;
+	outline: none;
+	-moz-outline-style: none;
+}
+.ih_vista .table .dojoxGrid-header .dojoxGrid-cell-over {
+	background: url(images/gridTitleBarActive.png) #f2f9fc repeat-x top;
+	border-color: white #96d9f9 #96d9f9 #96d9f9;
+}
+.ih_vista .table .dojoxGrid-sort-down {
+	background: url(images/grid_sort_down.gif) center top no-repeat;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.ih_vista .table .dojoxGrid-sort-up {
+	background: url(images/grid_sort_up.gif) center top no-repeat;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+.ih_vista .table .gridArrowButtonChar {
+	display:none !important;
+}
+.ih_vista .table .dojoxGrid-scrollbox {
+	position: relative;
+	overflow: auto;
+	background-color: #fefefe;
+	width: 100%;
+}
+.ih_vista .table .gridLable {
+	white-space: nowrap;
+}
+.ih_vista .table .dojoxGrid-content {
+	position: relative;
+	overflow: hidden;
+}
+.ih_vista .table .dojoxGrid-rowbar {
+	border: none;
+	
+	background: url(images/gridTitleBar.png) #e9e9e9 repeat-y right;
+	border-right: 1px solid #cccccc;
+	margin: 0px;
+	padding: 0px;
+}
+.ih_vista .table .dojoxGrid-rowbar-inner {
+	border: none;
+	border-bottom: 1px solid #cccccc;
+}
+.ih_vista .table .dojoxGrid-rowbar-over {
+	background: url(images/gridTitleBarActive.png) #e9e9e9 repeat-y right;
+}
+.ih_vista .table .dojoxGrid-rowbar-selected {
+	background-color: #D9E8F9;
+	background-image: none;
+	background: url(images/gridTitleBar.png) #dddddd repeat-x top;
+	border-right: 1px solid #cccccc;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.ih_vista .table .dojoxGrid-row {
+	position: relative;
+	background-color: white;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-collapse: collapse;
+}
+.ih_vista .table .dojoxGrid-row-over {
+	background-color: #eff8fd;
+	background-image: url(images/grid_bg/table_bg_over.gif);
+}
+.ih_vista .table .dojoxGrid-row-over .dojoxGrid-cell {
+}
+.ih_vista .table .dojoxGrid-row-odd {}
+.ih_vista .table .dojoxGrid-row-selected {
+	background-color: #e4f3fd;
+	background-image: url(images/grid_bg/table_bg_selected.gif);
+}
+.ih_vista .table .dojoxGrid-row-selected.dojoxGrid-row-over {
+	background-color: #d8effb;
+	background-image: url(images/grid_bg/table_bg_selected_over.gif);
+}
+.ih_vista .table .dojoxGrid-row-table {
+	table-layout: fixed;
+	width: 0;
+	border-collapse: collapse;
+}
+.ih_vista .table .dojoxGrid-invisible {
+	visibility: hidden;
+}
+.ih_vista .table .Xdojo-ie .dojoxGrid-invisible {
+	display: none;
+}
+.ih_vista .table .dojoxGrid-invisible td, .dojoxGrid-header .dojoxGrid-invisible td {
+	border-top-width: 0;
+	border-bottom-width: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 0;
+	overflow: hidden;
+}
+.ih_vista .table .dojoxGrid-cell {
+	border: none;
+	border-left: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+	text-align: left;
+	white-space: nowrap !important;
+	-moz-outline-style: none;
+	outline: none;
+	overflow: hidden !important;
+	height: 20px;
+	font: inherit;
+}
+.ih_vista .table .dojoxGrid-content .dojoxGrid-cell {
+	cursor: default !important;
+}
+.ih_vista .table .dojoxGrid-cell:first-child {
+	border-left: none;
+}
+.ih_vista .table .dojoxGrid-cell.last-child {
+	/*border-right: 1px solid transparent;*/
+}
+.dj_ie6 .ih_vista .table .dojoxGrid-cell {
+	border-right: 1px solid #D5CDB5;
+}
+.ih_vista .table .dojoxGrid-cell-focus {
+	/*border: 1px dotted #a6a6a6;*/
+}
+.ih_vista .table .dojoxGrid-cell-over {
+	/*border: 1px dotted #a6a6a6;*/
+}
+.ih_vista .table .dojoxGrid-cell-focus.dojoxGrid-cell-over {
+	/*border: 1px dotted #595959;*/
+}
+.ih_vista .table .dojoxGrid-cell-clip {
+	width: 100%;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+.ih_vista .table .dojoxGrid-row-editing td {
+	background-color: #60a1ea; 
+	
+}
+.ih_vista .table .dojoxGrid-row-inserting td {
+	background-color: #F4FFF4;
+}
+.ih_vista .table .dojoxGrid-row-inflight td {
+	background-color: #F2F7B7;
+}
+.ih_vista .table .dojoxGrid-row-error td {
+	background-color: #F8B8B6;
+}
+.ih_vista .table .dojoxGrid-input,
+.ih_vista .table .dojoxGrid-select,
+.ih_vista .table .dojoxGrid-textarea {
+	margin: 0;
+	padding: 0px;
+	border-style: none;
+	width: 100%;
+	font-size: 100%;
+	font-family: inherit;
+}
+.dojoxGrid-hidden-focus {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	height: 0px;
+	width: 0px;
+}
+.ih_vista .table .dijitGrid-rightAlignContainer {
+	width:100%;
+	position:relative;
+	height: 20px;
+	overflow: hidden;
+}
+.ih_vista .table .dijitGrid-rightAlignText {
+	white-space: nowrap;
+	position: absolute;
+	top: 3px;
+	right: 0px;
+}
+.ih_vista .table .thumb-block {
+	text-align: center;
+}
+.ih_vista .table .dojoxGrid-cell-data {
+	cursor: default;
+	white-space: nowrap !important;
+}
+.ih_vista .table .dojoxGrid-cell-data {
+	margin: auto 3px;
+}
+.ih_vista .table img {
+	width: 16px;
+	height: 16px;
+	padding: 0px;
+	margin: auto;
+	vertical-align: middle;
+	outline: none;
+	border: none;
+}
+.ih_vista .table .folder, .ih_vista .table .resource {
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	border: none;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.dj_ie6 .ih_vista .table .folder, .dj_ie6 .ih_vista .table .resource, .dj_ie6 .ih_vista .table img {
+	filter: expression(ITHit.WebDAV.Client.AjaxFileBrowser.Utils.FixPNG(this));
+}
+.ih_vista .table .folder {
+	background-image: url('images/grid_bg/folder_s.png');
+}
+
+.ih_vista .table .resource {
+	background-image: url('images/grid_bg/resource_s.png');
+}
+
+/* ------------------ */
+/*  Thumbnails block  */
+/* ------------------ */
+
+.ih_vista .thumb .thumb_block, .ih_vista .thumb .thumb_block tr, .ih_vista .thumb .thumb_block tr td {
+	height: 100%;
+}
+
+.ih_vista .thumb .dojoxGrid-master-header {
+	position: relative;
+	display: none !important;
+}
+.ih_vista .thumb .dojoxGrid-header {
+	position: absolute;
+	overflow: hidden;
+	background-color:  #e9e9e9;
+}
+
+.ih_vista .thumb .dojoxGrid-master-view {
+	position: relative;
+}
+
+.ih_vista .thumb .dojoxGrid-view {
+	position: absolute;
+	overflow: hidden;
+}
+.ih_vista .thumb .dojoxGrid-scrollbox {
+	position: relative;
+	overflow: auto;
+	background-color: #FFFFFF;
+	width: 100%;
+	
+}
+.ih_vista .thumb .dojoxGrid-content {
+	position: relative;
+	overflow: hidden;
+}
+.dojoxGrid-hidden-focus {
+	position: absolute;
+	left: -1000px;
+	top: -1000px;
+	height: 0px;
+	width: 0px;
+}
+
+.ih_vista .thumb .dojoxGrid-row {
+	border: 1px solid transparent !important;
+	border: 1px solid #FFFFFF;
+	float: left;
+	margin: 2px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.ih_vista .thumb .dojoxGrid-tr {
+	width: 100%;
+	margin: auto;
+}
+.ih_vista .thumb .dojoxGrid-cell {
+	overflow: hidden;
+	width: 100% !important;
+	text-align: center;
+	cursor: default;
+	 -moz-outline-style: none;
+	outline: none;
+}
+.ih_vista .thumb .dojoxGrid-row-over {
+	background-color: #f4fafd;
+	border: 1px solid #d8f0fa !important;
+}
+.ih_vista .thumb .dojoxGrid-row-selected {
+	background-color: #eff8fd;
+	border: 1px solid #99defd !important;
+}
+.ih_vista .thumb .dojoxGrid-row-selected.dojoxGrid-row-over {
+	background-color: #e7f5fd;
+	border: 1px solid #b6e6fb !important;
+}
+.ih_vista .thumb .image_preview {
+	border: 1px solid #8e8e8e;
+	background-color: white;
+	visibility:hidden;
+	vertical-align: bottom;
+	outline: none;
+}
+.dj_ie6 .ih_vista .thumb .image_preview {
+	filter: expression(ITHit.WebDAV.Client.AjaxFileBrowser.Utils.FixPNG(this));
+}
+.ih_vista .thumb .thumb_block tr td {
+	vertical-align: bottom;
+}
+.dj_ie6 .ih_vista .thumb img {
+	filter: expression(ITHit.WebDAV.Client.AjaxFileBrowser.Utils.FixPNG(this));
+}
+
+/** EXTRA LARGE **/
+
+/* div */
+.ih_vista .thumb .elarge .dojoxGrid-row {
+	width: 270px;
+	height: 276px;
+	margin: 3px;
+	margin-bottom: 33px;
+}
+/* image block */
+.ih_vista .thumb .elarge .image {
+	height: 258px;
+	text-align: center;
+}
+/* image */
+.ih_vista .thumb .elarge img {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+/* text */
+.ih_vista .thumb .elarge .name {
+	height: 18px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+}
+
+.ih_vista .thumb .elarge .folder, .ih_vista .thumb .elarge .resource {
+	filter: expression(ITHit.WebDAV.Client.AjaxFileBrowser.Utils.FixPNG(this));
+	width: 256px;
+	height: 256px;
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-bottom: 10px !important;
+}
+.ih_vista .thumb .elarge .folder {
+	background-image: url('images/grid_bg/folder_el.png');
+}
+.ih_vista .thumb .elarge .resource {
+	background-image: url('images/grid_bg/resource_el.png');
+}
+
+
+.ih_vista .thumb .elarge .dojoxGrid-row-over {
+	background-image: url('images/grid_bg/thumb_bg_over_el.gif');
+	background-repeat: repeat-x;
+}
+.ih_vista .thumb .elarge .dojoxGrid-row-selected {
+	background-image: url('images/grid_bg/thumb_bg_selected_el.gif');
+	background-repeat: repeat-x;
+	
+}
+.ih_vista .thumb .elarge .dojoxGrid-row-selected.dojoxGrid-row-over {
+	background-image: url('images/grid_bg/thumb_bg_selected_over_el.gif');
+	background-repeat: repeat-x;
+}
+
+/** LARGE **/
+
+/* div */
+.ih_vista .thumb .large .dojoxGrid-row {
+	width: 104px;
+	height: 116px;
+	margin: 3px;
+	margin-bottom: 27px;
+}
+/* image block */
+.ih_vista .thumb .large .image {
+	height: 98px;
+	text-align: center;
+}
+/* image */
+.ih_vista .thumb .large img {
+	padding: 2px;
+	margin-bottom: 5px;
+}
+/* text */
+.ih_vista .thumb .large .name {
+	height: 18px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+}
+
+.ih_vista .thumb .large .folder, .ih_vista .thumb .large .resource {
+	filter: expression(ITHit.WebDAV.Client.AjaxFileBrowser.Utils.FixPNG(this));
+	width: 64px;
+	height: 64px;
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-bottom: 5px !important;
+}
+.ih_vista .thumb .large .folder {
+	background-image: url('images/grid_bg/folder_l.png');
+}
+.ih_vista .thumb .large .resource {
+	background-image: url('images/grid_bg/resource_l.png');
+}
+
+
+.ih_vista .thumb .large .dojoxGrid-row-over {
+	background-image: url('images/grid_bg/thumb_bg_over_l.gif');
+	background-repeat: repeat-x;
+}
+.ih_vista .thumb .large .dojoxGrid-row-selected {
+	background-image: url('images/grid_bg/thumb_bg_selected_l.gif');
+	background-repeat: repeat-x;
+	
+}
+.ih_vista .thumb .large .dojoxGrid-row-selected.dojoxGrid-row-over {
+	background-image: url('images/grid_bg/thumb_bg_selected_over_l.gif');
+	background-repeat: repeat-x;
+}
+
+/** MEDIUM **/
+
+/* div */
+.ih_vista .thumb .medium .dojoxGrid-row {
+	width: 74px;
+	height: 68px;
+	margin: 3px;
+	margin-bottom: 18px;
+}
+/* image block */
+.ih_vista .thumb .medium .image {
+	height: 50px;
+	text-align: center;
+}
+/* image */
+.ih_vista .thumb .medium img {
+	padding: 1px;
+	margin-bottom: 4px;
+}
+/* text */
+.ih_vista .thumb .medium .name {
+	height: 18px;
+	line-height: 18px;
+	text-overflow: ellipsis;
+}
+
+.ih_vista .thumb .medium .folder, .ih_vista .thumb .medium .resource 
+{
+	filter: expression(ITHit.WebDAV.Client.AjaxFileBrowser.Utils.FixPNG(this));
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-bottom: 4px !important;
+}
+.ih_vista .thumb .medium .folder {
+	background-image: url('images/grid_bg/folder_m.png');
+}
+.ih_vista .thumb .medium .resource {
+	background-image: url('images/grid_bg/resource_m.png');
+}
+
+
+.ih_vista .thumb .medium .dojoxGrid-row-over {
+	background-image: url('images/grid_bg/thumb_bg_over_m.gif');
+	background-repeat: repeat-x;
+}
+.ih_vista .thumb .medium .dojoxGrid-row-selected {
+	background-image: url('images/grid_bg/thumb_bg_selected_m.gif');
+	background-repeat: repeat-x;
+	
+}
+.ih_vista .thumb .medium .dojoxGrid-row-selected.dojoxGrid-row-over {
+	background-image: url('images/grid_bg/thumb_bg_selected_over_m.gif');
+	background-repeat: repeat-x;
+}
+
+/* ********************* */
+/* Upload manager images */
+/* ********************* */
+
+.ih_vista .table .upload_status, .ih_vista .table .queue_status, .ih_vista .table .error_status {
+	filter: expression(ITHit.WebDAV.Client.AjaxFileBrowser.Utils.FixPNG(this));
+	width: 16px;
+	height: 16px;
+	margin: auto;
+	background-repeat: no-repeat;
+}
+
+.ih_vista .table .upload_status {
+	background-image: url('images/upload/upload.png');
+}
+
+.ih_vista .table .queue_status {
+	background-image: url('images/upload/queue.png');
+}
+
+.ih_vista .table .error_status {
+	background-image: url('images/upload/error.png');
+}
+
+.ih_vista .table .progress_bar {
+	width: 98%;
+	height: 6px;
+	padding: 1px;
+	border: 1px solid #CCCCCC;
+	font-size: 0px;
+	margin: auto;
+	overflow: hidden; 
+}
+
+.ih_vista .table .progress {
+	background-color: lightblue;
+	height: 100%;
+	width: 0%;
+	font-size: 0px;
+}
+
+.ih_vista .table .complite {
+	background-color: #879fae;
+}
+
+.ih_vista .table .error {
+	background-color: red;
+}
+
+
+
+
+

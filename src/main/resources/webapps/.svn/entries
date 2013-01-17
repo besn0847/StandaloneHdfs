@@ -1,0 +1,43 @@
+10
+
+dir
+2
+svn://home/hadoop-0.20.2-binc/webapps
+svn://home
+
+
+
+2011-01-02T20:12:18.060529Z
+2
+franck
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a6936256-f667-4e5d-b901-aced7a79cc9f
+
+datanode
+dir
+
+hdfs
+dir
+
+ajaxfilebrowser
+dir
+
+static
+dir
+
+webdav
+dir
+

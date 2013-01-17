@@ -1,0 +1,105 @@
+
+.ih_vista div, .ih_vista dl, .ih_vista dt, .ih_vista dd, .ih_vista li, .ih_vista h1, .ih_vista h2, .ih_vista h3, .ih_vista h4, .ih_vista h5, .ih_vista h6, .ih_vista pre, .ih_vista form, .ih_vista fieldset, .ih_vista input, .ih_vista textarea, .ih_vista p, .ih_vista blockquote, .ih_vista th, .ih_vista td {
+	margin: 0;
+	padding: 0;
+	font-family: Myriad,Arial,Helvetica,clean,sans-serif;
+	font-size: 11px;
+}
+.ih_vista span {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+.ih_vista fieldset, .ih_vista img {
+	border: 0 none;
+}
+.ih_vista address, .ih_vista caption, .ih_vista cite, .ih_vista code, .ih_vista dfn, .ih_vista th, .ih_vista var {
+	font-style: normal; 
+	font-weight: normal;
+}
+.ih_vista caption, .ih_vista th {
+	text-align: left;
+}
+.ih_vista q:before, .ih_vista q:after {
+	content:"";
+}
+.ih_vista abbr, .ih_vista acronym {
+	border:0;
+}
+.ih_vista {
+	font-size: 11px;
+}
+.ih_vista h1 {
+	font-size: 1.5em; 
+	font-weight: normal;
+	line-height: 1em; 
+	margin-top: 1em;
+	margin-bottom:0;
+}
+.ih_vista h2 { 
+	font-size: 1.1667em; 
+	font-weight: bold; 
+	line-height: 1.286em; 
+	margin-top: 1.929em; 
+	margin-bottom:0.643em;
+}
+.ih_vista h3, .ih_vista h4, .ih_vista h5, .ih_vista h6 {
+	font-size: 1em; 
+	font-weight: bold; 
+	line-height: 1.5em; 
+	margin-top: 1.5em; 
+	margin-bottom: 0;
+}
+.ih_vista p { 
+	font-size: 1em; 
+	margin-top: 1.5em; 
+	margin-bottom: 1.5em; 
+	line-height: 1.5em;
+}
+.ih_vista blockquote { 
+	font-size: 0.916em; 
+	margin-top: 3.272em; 
+	margin-bottom: 3.272em; 
+	line-height: 1.636em; 
+	padding: 1.636em; 
+	border-top: 1px solid #ccc; 
+	border-bottom: 1px solid #ccc;
+}
+.ih_vista ol li,.ih_vista ul li { 
+	font-size: 1em; 
+	line-height: 1.5em; 
+	margin: 0;
+}
+.ih_vista pre, .ih_vista code { 
+	font-size:115%;
+	*font-size:100%;
+	font-family: Courier, "Courier New"; 
+	background-color: #efefef; 
+	border: 1px solid #ccc;
+}
+.ih_vista pre { 
+	border-width: 1px 0; 
+	padding: 1.5em;
+}
+.ih_vista table {  font-size:100%; }
+.ih_vista table.dojoTabular { 
+	border-collapse: collapse; 
+	border-spacing: 0; 
+	border: 1px solid #ccc; 
+	margin: 0 1.5em;
+}
+.ih_vista .dojoTabular th { 
+	text-align: center; 
+	font-weight: bold;
+}
+.ih_vista table.dojoTabular thead, .ih_vista  table.dojoTabular tfoot { 
+	background-color: #efefef; 
+	border: 1px solid #ccc; 
+	border-width: 1px 0; 
+}
+.ih_vista table.dojoTabular thead tr th,
+.ih_vista table.dojoTabular thead tr td,
+.ih_vista table.dojoTabular tbody tr td,
+.ih_vista table.dojoTabular tfoot tr td { 
+	padding: 0.25em 0.5em;
+}
