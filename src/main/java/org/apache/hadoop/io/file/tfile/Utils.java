@@ -373,7 +373,6 @@ public final class Utils {
     /**
      * Compare this version with another version.
      */
-    @Override
     public int compareTo(Version that) {
       if (major != that.major) {
         return major - that.major;

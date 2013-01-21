@@ -953,7 +953,6 @@ public abstract class Server {
             value = 
               Subject.doAs(call.connection.user, 
                            new PrivilegedExceptionAction<Writable>() {
-                              @Override
                               public Writable run() throws Exception {
                                 // make the call
                                 return call(call.connection.protocol, 

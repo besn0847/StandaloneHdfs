@@ -425,7 +425,6 @@ public class UnixUserGroupInformation extends UserGroupInformation {
     return buf.toString();
   }
 
-  @Override
   public String getName() {
     return toString();
   }

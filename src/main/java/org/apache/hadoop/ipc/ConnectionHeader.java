@@ -53,7 +53,6 @@ class ConnectionHeader implements Writable {
     this.ugi = ugi;
   }
 
-  @Override
   public void readFields(DataInput in) throws IOException {
     protocol = Text.readString(in);
     if (protocol.isEmpty()) {
@@ -68,7 +67,6 @@ class ConnectionHeader implements Writable {
     }
   }
 
-  @Override
   public void write(DataOutput out) throws IOException {
     Text.writeString(out, (protocol == null) ? "" : protocol);
     if (ugi != null) {

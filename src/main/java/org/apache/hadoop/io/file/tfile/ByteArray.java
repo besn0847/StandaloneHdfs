@@ -69,7 +69,6 @@ public final class ByteArray implements RawComparable {
   /**
    * @return the underlying buffer.
    */
-  @Override
   public byte[] buffer() {
     return buffer;
   }
@@ -77,7 +76,6 @@ public final class ByteArray implements RawComparable {
   /**
    * @return the offset in the buffer.
    */
-  @Override
   public int offset() {
     return offset;
   }
@@ -85,7 +83,6 @@ public final class ByteArray implements RawComparable {
   /**
    * @return the size of the byte array.
    */
-  @Override
   public int size() {
     return len;
   }

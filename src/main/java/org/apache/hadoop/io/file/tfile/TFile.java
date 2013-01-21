@@ -730,7 +730,6 @@ public class TFile {
       /**
        * @see java.lang.Comparable#compareTo(java.lang.Object)
        */
-      @Override
       public int compareTo(Location other) {
         return compareTo(other.blockIndex, other.recordIndex);
       }
@@ -926,7 +925,6 @@ public class TFile {
          * come from different TFiles, users must ensure that those TFiles share
          * the same RawComparator.
          */
-        @Override
         public int compare(Scanner.Entry o1, Scanner.Entry o2) {
           return comparator.compare(o1.getKeyBuffer(), 0, o1.getKeyLength(), o2
               .getKeyBuffer(), 0, o2.getKeyLength());
@@ -1841,7 +1839,6 @@ public class TFile {
          * Entries are stored in a collection, and we want to compare a user
          * supplied key.
          */
-        @Override
         public int compareTo(RawComparable key) {
           return reader.compareKeys(keyBuffer, 0, getKeyLength(), key.buffer(),
               key.offset(), key.size());
@@ -2174,17 +2171,14 @@ public class TFile {
       this.kvEntries = entries;
     }
 
-    @Override
     public byte[] buffer() {
       return key;
     }
 
-    @Override
     public int offset() {
       return 0;
     }
 
-    @Override
     public int size() {
       return key.length;
     }

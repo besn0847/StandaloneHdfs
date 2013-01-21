@@ -971,7 +971,6 @@ final class BCFile {
       return rawSize;
     }
 
-    @Override
     public long magnitude() {
       return offset;
     }

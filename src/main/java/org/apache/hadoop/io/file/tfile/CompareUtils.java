@@ -41,7 +41,6 @@ class CompareUtils {
       this.cmp = cmp;
     }
 
-    @Override
     public int compare(RawComparable o1, RawComparable o2) {
       return compare(o1.buffer(), o1.offset(), o1.size(), o2.buffer(), o2
           .offset(), o2.size());
@@ -73,7 +72,6 @@ class CompareUtils {
   }
 
   public static final class ScalarComparator implements Comparator<Scalar> {
-    @Override
     public int compare(Scalar o1, Scalar o2) {
       long diff = o1.magnitude() - o2.magnitude();
       if (diff < 0) return -1;
@@ -84,12 +82,10 @@ class CompareUtils {
 
   public static final class MemcmpRawComparator implements
       RawComparator<Object> {
-    @Override
     public int compare(byte[] b1, int s1, int l1, byte[] b2, int s2, int l2) {
       return WritableComparator.compareBytes(b1, s1, l1, b2, s2, l2);
     }
 
-    @Override
     public int compare(Object o1, Object o2) {
       throw new RuntimeException("Object comparison not supported");
     }

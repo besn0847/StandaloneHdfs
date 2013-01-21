@@ -4,7 +4,7 @@
 	
   <groupId>mobi.besnard.hadoop</groupId>
   <artifactId>StandaloneHdfs</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>StandaloneHdfs</name>
@@ -13,7 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -151,9 +151,39 @@
 		<version>0.5</version>
 	</dependency>             
   </dependencies>
+
   <organization>
   	<name>besnard.mobi</name>
   	<url>http://www.besnard.mobi</url>
   </organization>
+
   <description>Creating a standalone version of HDFS. This will be ported to peer-to-peer.</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<descriptors>
+						<descriptor>src/main/assemble/namenode-assembly.xml</descriptor>
+						<descriptor>src/main/assemble/datanode-assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+ 			</plugin>
+ 			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.1</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+		</plugins>
+	</build>
 </project>

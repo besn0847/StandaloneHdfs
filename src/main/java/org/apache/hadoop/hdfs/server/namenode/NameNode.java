@@ -912,7 +912,6 @@ public class NameNode implements ClientProtocol, DatanodeProtocol,
     return false;
   }
 
-  @Override
   public void refreshServiceAcl() throws IOException {
     if (!serviceAuthEnabled) {
       throw new AuthorizationException("Service Level Authorization not enabled!");
