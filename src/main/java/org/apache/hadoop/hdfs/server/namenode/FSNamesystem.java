@@ -2811,7 +2811,7 @@ public class FSNamesystem implements FSConstants, FSNamesystemMBean {
                                   + " is removed from datanodeMap.");
   }
 
-  FSImage getFSImage() {
+  public FSImage getFSImage() {
     return dir.fsImage;
   }
 

@@ -204,7 +204,7 @@ public class FSImage extends Storage {
     return new File(sd.getCurrentDir(), type.getName());
   }
   
-  List<StorageDirectory> getRemovedStorageDirs() {
+  public List<StorageDirectory> getRemovedStorageDirs() {
 	  return this.removedStorageDirs;
   }
   
