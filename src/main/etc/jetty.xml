@@ -11,9 +11,9 @@
 				<Array type="org.mortbay.jetty.Handler">
 				<Item>
 					<New id="ExplorerHandler" class="org.mortbay.jetty.webapp.WebAppContext">
-						<Call name="setContextPath"><Arg>/ajaxexplorer</Arg></Call>
-						<Call name="setWar"><Arg>webapps/ajaxfilebrowser</Arg></Call>
-						<Call name="setDescriptor"><Arg>webapps/ajaxfilebrowser/WEB-INF/web.xml</Arg></Call> 
+						<Call name="setContextPath"><Arg>/explorer</Arg></Call>
+						<Call name="setWar"><Arg>webapps/explorer</Arg></Call>
+						<Call name="setDescriptor"><Arg>webapps/explorer/WEB-INF/web.xml</Arg></Call> 
 						<!-- Uncomment these lines if you want check user permission  -->
 <!--
 						 <Get name="SecurityHandler">

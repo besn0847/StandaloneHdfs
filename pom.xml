@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 	
   <groupId>mobi.besnard.hadoop</groupId>
-  <artifactId>StandaloneHdfs</artifactId>
+  <artifactId>standalone-hdfs</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
@@ -235,8 +235,12 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
+					<archiverConfig>
+					  <defaultDirectoryMode>0755</defaultDirectoryMode>
+					</archiverConfig>
 					<descriptors>
 						<descriptor>src/main/assemble/namenode-assembly.xml</descriptor>
+						<descriptor>src/main/assemble/datanode-assembly.xml</descriptor>
 					</descriptors>
 				</configuration>
 				<executions>
