@@ -241,6 +241,7 @@
 					<descriptors>
 						<descriptor>src/main/assemble/namenode-assembly.xml</descriptor>
 						<descriptor>src/main/assemble/datanode-assembly.xml</descriptor>
+						<descriptor>src/main/assemble/winnode-assembly.xml</descriptor>
 					</descriptors>
 				</configuration>
 				<executions>
